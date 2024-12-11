@@ -1,0 +1,9 @@
+{
+  "name": "learn-and-dev-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/learn-and-dev-e2e/src",
+  "implicitDependencies": ["learn-and-dev"],
+  "// targets": "to see all targets run: nx show project learn-and-dev-e2e --web",
+  "targets": {}
+}
