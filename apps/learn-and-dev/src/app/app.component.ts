@@ -1,13 +1,20 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { User } from '@learn-and-dev/types';
+import { ExampleComponent } from '@learn-and-dev/ui';
 
 @Component({
-  imports: [NxWelcomeComponent, RouterModule],
+  imports: [RouterModule, CommonModule, ExampleComponent],
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'learn-and-dev';
+  user: User = {
+    id: 1,
+    name: 'Zohar',
+    city: 'Dimona',
+  };
 }
